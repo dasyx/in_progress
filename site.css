@@ -4,14 +4,13 @@
 
 html{
   height: 100%;
-  width: 100%;
 }
-body {
+body{
   height: 100%;
-  width: inherit;
+  width: 80%;
   margin: 0 auto;
 }
-.container {
+.container{
   height: 100%;
   display: flex;
   flex-direction: row-reverse;
@@ -22,14 +21,14 @@ body {
 /*II...AFFICHAGE PARTIE GAUCHE
 =========================================================*/
 
-aside {
+aside{
   display: flex;
   flex-direction: column;
   flex: 1;
   background-color: rgb(142, 148, 204);
   text-align: justify;
 }
-aside img {
+aside img{
   display: flex;
   width: 180px;
   height: 180px;
@@ -53,7 +52,7 @@ aside p{
   font-size: 0.9em;
   padding-left: 20px;
 }
-aside p, a {
+aside p, a{
   padding: 0 40px 0 40px;
 }
 aside div:first-child{
@@ -74,10 +73,10 @@ address a{
   /*On retire l'espace entre le lien "href" et "Email" au niveau de l'adresse mail*/
   padding-left: 0px;                                                       
 }
-/*III...AFFICHAGE PARTIE DROITE
+/*IIIa...AFFICHAGE PARTIE DROITE (HEADER)
 =========================================================*/
 
-section {
+section{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -85,13 +84,12 @@ section {
   padding-left: 60px;
 }
 
-header {
+header{
   margin-top: 60px;
-  margin-bottom: 120px;
-  margin-left: -30px;
+  margin-bottom: 70px;
   line-height: 10px;
 }
-h1 {
+h1{
   font-weight: 200;
   font-size: 40px;
   word-spacing: 2px;
@@ -105,12 +103,36 @@ h2{
   font-weight: 600;
   font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
+/*On va styliser la balise "hr" qui soulignera le titre de niveau h2 sous le prénom et nom*/
 hr{
-  width: 10%;
+  width: 15%;
   margin: 0;
+  border: 1px solid rgb(142, 148, 204);
+}
+
+/*IIIb...AFFICHAGE PARTIE DROITE (ARTICLE > PARCOURS)
+=========================================================*/
+
+h3{
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
   color: rgb(142, 148, 204);
 }
-  
+h3:first-child{
+  border-bottom: 2px solid rgb(142, 148, 204);
+  margin-right: 20px;
+  font-size: 1.2em;
+}
+h3[Formation]{
+  color: black;
+}
+
+
+.part_right_text{
+  flex:2;
+}
 
 /*IV...ADAPTABILITE RESPONSIVE DESIGN
 =========================================================*/
