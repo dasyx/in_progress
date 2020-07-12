@@ -3,15 +3,16 @@
 =========================================================*/
 
 html{
-  height: 100%;
+  /*height: 100%;*/
+  /*max-width: 100%;*/
 }
+
 body{
-  height: 100%;
-  width: 80%;
-  margin: 0 auto;
+ margin: 0 auto;
+ width: 60%;
 }
 .container{
-  height: 100%;
+  height: 1214px;
   display: flex;
   flex-direction: row-reverse;
   background-color: #fff;
@@ -24,40 +25,42 @@ body{
 aside{
   display: flex;
   flex-direction: column;
-  flex: 1;
+  flex: 2;
   background-color: rgb(142, 148, 204);
   text-align: justify;
+  padding-top: 50px;
 }
 aside img{
   display: flex;
+  align-items: center;
   width: 180px;
   height: 180px;
   margin: 0 auto;
   border-radius: 100px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  /*margin-top: 30px;
+  margin-bottom: 30px;*/
 }
 aside h3{
-  padding: 10px;
+  padding: 8px;
   font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
   font-size: 22px;
   font-weight: 200;
   text-align: center;
   background-color: rgb(33,33,33);
   color: white;
+  box-sizing: border-box;
+  width: 100%;
 }
 aside p{
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-size: 0.9em;
-  padding-left: 20px;
 }
 aside p, a{
   padding: 0 40px 0 40px;
 }
 aside div:first-child{
-  /**/
-  flex: 2;
+  flex: 1;
 }
 
 .icons{
@@ -65,14 +68,22 @@ aside div:first-child{
   justify-content: space-around;
   border-radius: 5px;
   font-size: 2.5em;
-  margin: 15px;
-  padding: 10px;
+  padding: 5px;
+  margin-bottom: 40px;
+  margin-top: 1rem;
 }
-
+.aside_loisirs{
+  flex: 0 1 auto;
+  /*padding-top: 140px;*/
+}
 address a{
   /*On retire l'espace entre le lien "href" et "Email" au niveau de l'adresse mail*/
   padding-left: 0px;                                                       
 }
+header img{
+  display: none;
+}
+
 /*IIIa...AFFICHAGE PARTIE DROITE (HEADER)
 =========================================================*/
 
@@ -129,7 +140,6 @@ h3[Formation]{
   color: black;
 }
 
-
 .part_right_text{
   flex:2;
 }
@@ -137,16 +147,44 @@ h3[Formation]{
 /*IV...ADAPTABILITE RESPONSIVE DESIGN
 =========================================================*/
 
-@media screen and (max-width:1366px) {
-
+@media screen and (max-width: 991px) {
+  .container{
+      flex-direction: column;
+  }
+  h1{
+      font-size:3.4em;
+      margin-top:50px;
+  }
+  section{
+      padding:20px;
+  }
+  article ul:nth-child(2){
+      margin-right:0;
+  }
+  address{
+      display: flex;
+  }
+  header{
+      text-align: center;
+      padding-top:30px;
+  }
+  img{
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+    display: flex;
+    margin: auto;
+}
+  header hr{
+      display:flex;
+      margin:auto;
+  }
   aside{
-    flex: 2;
+      padding-top: 0;
   }
-  body {
-    max-height: 100%;
+  aside h3:first-child{
+      margin-top: 0;
   }
-
-  .container {
-    max-height: 100%;
-  }
+  aside > div img {
+      display: none;
 }
