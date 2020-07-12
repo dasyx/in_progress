@@ -1,16 +1,11 @@
 
 /*I...STRUCTURE GLOBALE
 =========================================================*/
-
-html{
-  /*height: 100%;*/
-  /*max-width: 100%;*/
-}
-
 body{
  margin: 0 auto;
- width: 60%;
+ width: 100%;
 }
+
 .container{
   height: 1214px;
   display: flex;
@@ -148,44 +143,46 @@ article .fas{
 /*IV...ADAPTABILITE RESPONSIVE DESIGN
 =========================================================*/
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 800px) {
   .container{
       flex-direction: column;
   }
   h1{
-      font-size:3.4em;
-      margin-top:50px;
+      font-size:3.2em;
+      margin-top:70px;
   }
   section{
       padding:20px;
-  }
-  article ul:nth-child(2){
-      margin-right:0;
   }
   address{
       display: flex;
   }
   header{
+      margin: 0 auto;
       text-align: center;
-      padding-top:30px;
+      padding-bottom: 60px;
   }
-  img{
-    width: 120px;
-    height: 120px;
-    border-radius: 100px;
+  header img{
+    padding-top: 10px;
+    width: 160px;
+    height: 160px;
+    border-radius: 140px;
     display: flex;
     margin: auto;
 }
   header hr{
-      display:flex;
-      margin:auto;
+      display: flex;
+      margin: auto;
   }
   aside{
-      padding-top: 0;
+      padding-top: 0px;
+  /*En supprimant la marge intérieure, on évitera le dépassement du contenu hors de son contenant*/
   }
   aside h3:first-child{
-      margin-top: 0;
+      margin-top: 0px;
+  /*En supprimant la marge extérieure, on évitera le dépassement du contenu hors de son contenant*/
   }
   aside > div img {
       display: none;
+  /*On gagnera de la place dans l'affichage du cv résolution réduite en n'affichant pas la photo*/
 }
