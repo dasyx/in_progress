@@ -129,16 +129,17 @@ h3{
   font-size: 22px;
   font-weight: 600;
   text-transform: uppercase;
-  color: rgb(142, 148, 204);
+  color: black;
 }
 h3:first-child{
   border-bottom: 2px solid rgb(142, 148, 204);
-  margin-right: 20px;
-  font-size: 1.2em;
 }
-h3[Formation]{
-  color: black;
+
+article .fas{
+  padding: 0px 25px 15px 0px;
+  color: rgb(142, 148, 204);
 }
+
 
 .part_right_text{
   flex:2;
