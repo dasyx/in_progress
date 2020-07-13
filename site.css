@@ -55,7 +55,7 @@ aside p, a{
   padding: 0 40px 0 40px;
 }
 aside div:first-child{
-  flex: 1;
+  flex: 1 0 auto;
 }
 
 .icons{
