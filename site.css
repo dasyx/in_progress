@@ -185,4 +185,5 @@ article .fas{
   aside > div img {
       display: none;
   /*On gagnera de la place dans l'affichage du cv résolution réduite en n'affichant pas la photo*/
+  } 
 }
