@@ -2,8 +2,9 @@
 /*I...STRUCTURE GLOBALE
 =========================================================*/
 body{
+  max-width: 80%;
   min-height: 100vh;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -133,16 +134,22 @@ h3:first-child{
 }
 .conteneur{
   display: flex;
+  flex-direction: row;
+  width: auto;
+  height: 400px;
 }
 .gauche{
-  flex-direction: row;
   flex: 1 0 auto;
 }
 .droite{
-  flex-direction: column;
-  padding : 20px;
-  margin-left: 50px;
+  flex: 3 0 50%;
   text-align: justify;
+}
+
+#date2{
+  margin-top: 100px;
+}
+
 
 /*IV...ADAPTABILITE RESPONSIVE DESIGN
 =========================================================*/
