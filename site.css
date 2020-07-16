@@ -138,19 +138,16 @@ h3:first-child{
   width: auto;
   height: 400px;
 }
-.gauche{
+.droite{
+  display: flex;
+}
+.texte{
+  flex: 2;
+}
+.date{
   flex: 1;
 }
-.droite{
-  flex: 4;
-  text-align: justify;
-}
-#date2{
-  margin-top: 120px;
-}
-#form{
-  margin-top: 35px;
-}
+
 /*IV...ADAPTABILITE RESPONSIVE DESIGN
 =========================================================*/
 
@@ -162,6 +159,9 @@ h3:first-child{
   h1{
       font-size:3.2em;
       margin-top:70px;
+  }
+  p{
+      font-size: 1.2em;
   }
   section{
       padding:20px;
