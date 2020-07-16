@@ -62,14 +62,13 @@ aside div:first-child{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  border-radius: 5px;
   font-size: 2.5em;
   padding: 5px;
   margin-bottom: 40px;
   margin-top: 1rem;
 }
 .aside_loisirs{
-  padding-top: 140px;
+  padding-top: 200px;
 }
 address a{
   /*On retire l'espace entre le lien "href" et "Email" au niveau de l'adresse mail*/
@@ -130,6 +129,11 @@ h3:first-child{
   padding: 0px 25px 15px 0px;
   color: rgb(142, 148, 204);
 }
+#logo_bagage{
+  padding: 0px 25px 15px 0px;
+  color: rgb(142, 148, 204);
+}
+
 .droite{
   display: flex;
 }
@@ -140,6 +144,7 @@ h3:first-child{
 .date{
   display: flex;
   flex: 1;
+  margin-top: 15px;
 }
 .date .fas, .far{
   margin-right: 10px;
@@ -207,4 +212,12 @@ h3:first-child{
    body{
       width: 80%;
    }
+}
+
+@media screen and (min-width: 1000px) {
+  
+  .aside_loisirs{
+    padding-top: 400px;
+  } 
+
 }
