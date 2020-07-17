@@ -68,7 +68,8 @@ aside div:first-child{
   margin-top: 1rem;
 }
 .aside_loisirs{
-  padding-top: 200px;
+  /*padding-top: 200px;*/
+  /*margin: auto;*/
 }
 address a{
   /*On retire l'espace entre le lien "href" et "Email" au niveau de l'adresse mail*/
@@ -133,7 +134,10 @@ h3:first-child{
   padding: 0px 25px 15px 0px;
   color: rgb(142, 148, 204);
 }
-
+#logo_social{
+  padding: 0px 25px 15px 0px;
+  color: rgb(142, 148, 204);
+}
 .droite{
   display: flex;
 }
@@ -154,6 +158,16 @@ h3:first-child{
 .date p{
   margin-top: 5px;
   margin-bottom: 5px;
+}
+.recom{
+  display: flex;
+  justify-content: space-between;
+}
+.left{
+  /*flex: 1;*/
+}
+.right{
+  /*flex: 1;*/
 }
 
 /*IV...ADAPTABILITE RESPONSIVE DESIGN
@@ -212,12 +226,21 @@ h3:first-child{
    body{
       width: 80%;
    }
+
+   header{
+    margin-bottom: 150px;
+  }
+
+  .droite{
+    margin-bottom: 50px;
+  }
+
 }
 
 @media screen and (min-width: 1000px) {
   
   .aside_loisirs{
-    padding-top: 400px;
+    padding-top: 650px;
   } 
 
 }
