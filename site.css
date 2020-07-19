@@ -1,5 +1,5 @@
 
-/*I...STRUCTURE GLOBALE
+/*I...PARAMETRES GÉNÉRAUX
 =========================================================*/
 body{
   max-width: 80%;
@@ -56,7 +56,13 @@ aside p, a{
   padding: 0 40px 0 40px;
 }
 aside div:first-child{
-  flex: 0 1 auto;
+  flex: 2 0 auto;
+}
+aside div:nth-child(2){
+  flex: 1;
+}
+article h3{
+  padding-top: 50px;
 }
 .icons{
   display: flex;
@@ -67,10 +73,7 @@ aside div:first-child{
   margin-bottom: 40px;
   margin-top: 1rem;
 }
-.aside_loisirs{
-  /*padding-top: 200px;*/
-  /*margin: auto;*/
-}
+
 address a{
   /*On retire l'espace entre le lien "href" et "Email" au niveau de l'adresse mail*/
   padding-left: 0px;                                                       
@@ -89,9 +92,10 @@ section{
 }
 
 header{
-  margin-top: 60px;
-  margin-bottom: 70px;
-  line-height: 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  line-height: 1.3vh;
 }
 h1{
   font-weight: 200;
@@ -109,7 +113,7 @@ h2{
 }
 /*On va styliser la balise "hr" qui soulignera le titre de niveau h2 sous le prénom et nom*/
 hr{
-  width: 15%;
+  width: 10%;
   margin: 0;
   border: 1px solid rgb(142, 148, 204);
 }
@@ -148,7 +152,7 @@ h3:first-child{
 .date{
   display: flex;
   flex: 1;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 .date .fas, .far{
   margin-right: 10px;
@@ -238,9 +242,24 @@ h3:first-child{
 }
 
 @media screen and (min-width: 1000px) {
+
+  aside img{
+  display: flex;
+  align-items: center;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+  p{
+    font-size: 1.2em;
+}
   
   .aside_loisirs{
-    padding-top: 650px;
+    flex: 1;
+    /*padding-top: 800px;*/
   } 
 
 }
