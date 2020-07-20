@@ -134,18 +134,11 @@ h3:first-child{
   border-bottom: 2px solid rgb(142, 148, 204);
 }
 
-#logo_formation{
+.logo{
   padding: 0px 25px 15px 0px;
   color: rgb(142, 148, 204);
 }
-#logo_bagage{
-  padding: 0px 25px 15px 0px;
-  color: rgb(142, 148, 204);
-}
-#logo_social{
-  padding: 0px 25px 15px 0px;
-  color: rgb(142, 148, 204);
-}
+
 .droite{
   display: flex;
 }
