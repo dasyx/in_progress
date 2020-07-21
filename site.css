@@ -3,23 +3,30 @@
 =========================================================*/
 body{
   max-width: 80%;
-  min-height: 100vh;
   margin: 0 auto;
   padding: 0;
 }
-
 .container{
-  height: auto;
   display: flex;
   flex-direction: row-reverse;
   background-color: #fff;
   padding: 1em;
  }
+ h1{
+  font-weight: 200;
+  font-size: 40px;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
+}
+h2{
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
 
- p{
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-size: 0.9em;
+p{
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  font-size: 0.4em;
 }
 
 /*II...AFFICHAGE PARTIE GAUCHE
@@ -29,7 +36,7 @@ aside{
   display: flex;
   flex-direction: column;
   flex: 2;
-  background-color: rgb(142, 148, 204);
+  background-color: rgb(102,187,106);
   text-align: justify;
   padding-top: 50px;
 }
@@ -44,12 +51,11 @@ aside img{
 }
 aside h3{
   padding: 8px;
-  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
   font-size: 22px;
-  font-weight: 200;
+  font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
   text-align: center;
   background-color: rgb(33,33,33);
-  color: white;
+  color: rgb(102,187,106);
   box-sizing: border-box;
   width: 100%;
 }
@@ -66,6 +72,7 @@ aside div:nth-child(2){
   flex: 1;
 }
 article h3{
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
   padding-top: 50px;
 }
 .icons{
@@ -77,10 +84,14 @@ article h3{
   margin-bottom: 40px;
   margin-top: 1rem;
 }
-
+address{
+  font-style: normal;
+}
 address a{
   /*On retire l'espace entre le lien "href" et "Email" au niveau de l'adresse mail*/
-  padding-left: 0px;                                                       
+  padding-left: 0px;   
+  text-decoration: none;
+  color: rgb(33,33,33);                                          
 }
 header img{
   display: none;
@@ -91,7 +102,7 @@ header img{
 
 section{
   flex-direction: column;
-  background-color: rgb(209, 218, 192);
+  background-color: rgb(250,250,250);
   padding: 40px;
 }
 
@@ -101,42 +112,28 @@ header{
   padding-bottom: 20px;
   line-height: 1.3vh;
 }
-h1{
-  font-weight: 200;
-  font-size: 40px;
-  word-spacing: 2px;
-  letter-spacing: 1px;
-  font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
-}
 #nom{
-  color: rgb(142, 148, 204);
-}
-h2{
-  font-weight: 600;
-  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  color: rgb(102,187,106);
 }
 /*On va styliser la balise "hr" qui soulignera le titre de niveau h2 sous le prénom et nom*/
 hr{
-  width: 10%;
+  width: 7%;
   margin: 0;
-  border: 1px solid rgb(142, 148, 204);
+  margin-top: -10px;
+  border: 1px solid rgb(102,187,106);
 }
 
 /*IIIb...AFFICHAGE PARTIE DROITE (ARTICLE > PARCOURS)
 =========================================================*/
 
-h3{
-  font-weight: 600;
-  text-transform: uppercase;
-  color: black;
-}
 h3:first-child{
-  border-bottom: 2px solid rgb(142, 148, 204);
+  border-bottom: 2px solid rgb(102,187,106);
 }
 
 .logo{
+  font-size: xx-large;
   padding: 0px 25px 15px 0px;
-  color: rgb(142, 148, 204);
+  color: rgb(102,187,106);
 }
 
 .droite{
@@ -149,11 +146,11 @@ h3:first-child{
 .date{
   display: flex;
   flex: 1;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .date .fas, .far{
   margin-right: 10px;
-  margin-top: 8px;
+  margin-top: 15px;
   font-size: 0.6em;
 }
 .date p{
@@ -173,11 +170,37 @@ h3:first-child{
 
 /*IV...ADAPTABILITE RESPONSIVE DESIGN
 =========================================================*/
+@media screen and (min-width: 1024px) {
 
-@media screen and (max-width: 800px) {
+  aside img{
+  display: flex;
+  align-items: center;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+  p{
+    font-size: 1.2em;
+}
+  
+  .aside_loisirs{
+    flex: 1;
+    /*padding-top: 800px;*/
+  } 
+
+}
+@media screen and (max-width: 768px) {
+
+  body{
+    max-width: 100%;
+  }
 
   .container{
       flex-direction: column;
+      width: auto;
   }
   h1{
       font-size:3.2em;
@@ -221,42 +244,4 @@ h3:first-child{
       display: none;
   /*On gagnera de la place dans l'affichage du cv résolution réduite en n'affichant pas la photo*/
   } 
-}
-@media screen and (min-width: 1366px) {
-
-   body{
-      width: 80%;
-   }
-
-   header{
-    margin-bottom: 150px;
-  }
-
-  .droite{
-    margin-bottom: 50px;
-  }
-
-}
-
-@media screen and (min-width: 1000px) {
-
-  aside img{
-  display: flex;
-  align-items: center;
-  width: 180px;
-  height: 180px;
-  margin: 0 auto;
-  border-radius: 50%;
-  margin-bottom: 30px;
-}
-
-  p{
-    font-size: 1.2em;
-}
-  
-  .aside_loisirs{
-    flex: 1;
-    /*padding-top: 800px;*/
-  } 
-
 }
