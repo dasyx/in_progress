@@ -1,8 +1,7 @@
-
-/*I...PARAMETRES GÉNÉRAUX
-=========================================================*/
+/*Ia...AFFICHAGE GENERAL...:
+=============================================================*/
 body{
-  max-width: 80%;
+  max-width: 90%;
   margin: 0 auto;
   padding: 0;
 }
@@ -11,10 +10,12 @@ body{
   flex-direction: row-reverse;
   background-color: #fff;
   padding: 1em;
- }
- h1{
+}
+/*Ib...PARAMETRES GÉNÉRAUX (titres + paragraphes)
+=============================================================*/
+h1{
   font-weight: 200;
-  font-size: 40px;
+  font-size: 50px;
   word-spacing: 2px;
   letter-spacing: 1px;
   font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
@@ -23,18 +24,37 @@ h2{
   font-weight: bold;
   font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
-
-p{
+aside h3{
+  padding: 8px;
+  font-size: 34px;
+  font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: 0.2vh;
+  text-align: center;
+  background-color: rgb(33,33,33);
+  color: rgb(102,187,106);
+  box-sizing: border-box;
+  width: 100%;
+}
+article h3{
+  font-size: 35px;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
+  padding-top: 50px;
+}
+h4{
+  font-size: 25px;
   font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
-
-/*II...AFFICHAGE PARTIE GAUCHE
-=========================================================*/
-
+.container p{
+  font-size: 25px;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+/*II...AFFICHAGE PARTIE GAUCHE:
+==============================================================*/
 aside{
   display: flex;
   flex-direction: column;
-  flex: 2;
+  flex: 3;
   background-color: rgb(102,187,106);
   text-align: justify;
   padding-top: 50px;
@@ -48,17 +68,6 @@ aside img{
   border-radius: 50%;
   margin-bottom: 30px;
 }
-aside h3{
-  padding: 8px;
-  font-size: 1.8vh;
-  font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
-  letter-spacing: 0.2vh;
-  text-align: center;
-  background-color: rgb(33,33,33);
-  color: rgb(102,187,106);
-  box-sizing: border-box;
-  width: 100%;
-}
 aside p, a{
   padding: 0 40px 0 40px;
 }
@@ -71,42 +80,35 @@ aside div:nth-child(2){
 /*le second enfant s'étendra en utilisant 1/3 de l'espace dispo*/
   flex: 1;
 }
-article h3{
-  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-  padding-top: 50px;
+.aside_loisirs{
+  font-size: 4em;
 }
 .icons{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  font-size: 2.8em;
-  padding: 5px;
-  margin-top: 2rem;
-  margin-bottom: 1.5rem;
+  padding: 25px;
 }
 address{
   font-style: normal;
 }
 address a{
-  /*On retire l'espace entre le lien "href" et "Email" au niveau de l'adresse mail*/
+  /*On retire l'espace entre le lien "href" et "Email" au niveau de l'adresse mail:*/
   padding-left: 0px;   
+  /*On retire également le trait de sous-lignage du lien de l'adresse email:*/
   text-decoration: none;
   color: rgb(33,33,33);                                          
 }
 header img{
   display: none;
 }
-
-/*IIIa...AFFICHAGE PARTIE DROITE (HEADER)
+/*IIIa...AFFICHAGE PARTIE DROITE (HEADER):
 =========================================================*/
-
 section{
   flex-direction: column;
   background-color: rgb(250,250,250);
+  margin-left: 15px;
   padding: 40px;
-}
-section > article h3{
-  font-size: x-large;
 }
 header{
   margin-top: 40px;
@@ -114,7 +116,7 @@ header{
   padding-bottom: 20px;
   line-height: 1.3vh;
 }
-#nom{
+#prenom{
   color: rgb(102,187,106);
 }
 /*On va styliser la balise "hr" qui soulignera le titre de niveau h2 sous le prénom et nom*/
@@ -124,20 +126,16 @@ hr{
   margin-top: -10px;
   border: 1px solid rgb(102,187,106);
 }
-
-/*IIIb...AFFICHAGE PARTIE DROITE (ARTICLE > PARCOURS)
+/*IIIb...AFFICHAGE PARTIE DROITE (ARTICLE > PARCOURS):
 =========================================================*/
-
 h3:first-child{
   border-bottom: 2px solid rgb(102,187,106);
 }
-
 .logo{
   font-size: xx-large;
-  padding: 0px 25px 15px 0px;
+  padding: 0px 40px 15px 0px;
   color: rgb(102,187,106);
 }
-
 .droite{
   display: flex;
 }
@@ -146,14 +144,14 @@ h3:first-child{
   align-content: center;
 }
 .date{
+  margin-top: 30px;
   display: flex;
   flex: 1;
-  margin-top: 10px;
 }
 .date .fas, .far{
-  margin-right: 10px;
+  margin-right: 15px;
   margin-top: 15px;
-  font-size: 0.6em;
+  font-size: 0.8em;
 }
 .date p{
   margin-top: 5px;
@@ -163,18 +161,18 @@ h3:first-child{
   display: flex;
   justify-content: space-between;
 }
-.left{
-  /*flex: 1;*/
+/*.left{
+  flex: 1;
 }
 .right{
-  /*flex: 1;*/
-}
+  flex: 1;
+}*/
 
-/*IV...ADAPTABILITE RESPONSIVE DESIGN
+/*IV...ADAPTABILITE RESPONSIVE DESIGN:
 =========================================================*/
 @media screen and (min-width: 1024px) {
 
-  aside img{
+aside img{
   display: flex;
   align-items: center;
   width: 180px;
@@ -184,65 +182,69 @@ h3:first-child{
   margin-bottom: 30px;
 }
 
-  p{
-    font-size: 1.2em;
+p{
+  font-size: 1.2em;
 }
   
-  .aside_loisirs{
-    flex: 1;
-  } 
+.aside_loisirs{
+  flex: 1;
+} 
 
 }
 @media screen and (min-width: 600px) and (max-width: 1024px) {
 
-  body{
-    max-width: 100%;
-  }
-
-  .container{
-      flex-direction: column;
-      width: auto;
-  }
-  h1{
-      font-size:3.2em;
-      margin-top:70px;
-  }
-  p{
-      font-size: 1.2em;
-  }
-  section{
-      padding:20px;
-  }
-  address{
-      display: flex;
-  }
-  header{
-      margin: 0 auto;
-      text-align: center;
-      padding-bottom: 60px;
-  }
-  header img{
-    padding-top: 10px;
-    width: 160px;
-    height: 160px;
-    border-radius: 140px;
-    display: flex;
-    margin: auto;
+body{
+  width: 100%;
 }
-  header hr{
-      display: flex;
-      margin: auto;
-  }
-  aside{
-      padding-top: 0px;
-  /*En supprimant la marge intérieure, on évitera le dépassement du contenu hors de son contenant*/
-  }
-  aside h3:first-child{
-      margin-top: 0px;
-  /*En supprimant la marge extérieure, on évitera le dépassement du contenu hors de son contenant*/
-  }
-  aside > div img {
-      display: none;
-  /*On gagnera de la place dans l'affichage du cv résolution réduite en n'affichant pas la photo*/
-  } 
+
+.container{
+  flex-direction: column;
+  width: auto;
+}
+aside h3{
+  font-size: 3vh;
+}
+h1{
+  font-size:3.2em;
+  margin-top:70px;
+}
+p{
+  font-size: 1.1em;
+}
+section{
+  padding:20px;
+}
+address{
+  display: flex;
+}
+header{
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 60px;
+}
+header img{
+  padding-top: 10px;
+  width: 160px;
+  height: 160px;
+  border-radius: 140px;
+  display: flex;
+  margin: auto;
+}
+header hr{
+  display: flex;
+  margin: auto;
+}
+aside{
+  padding-top: 0px;
+/*En supprimant la marge intérieure, on évitera le dépassement du contenu hors de son contenant*/
+}
+aside h3:first-child{
+  margin-top: 0px;
+/*En supprimant la marge extérieure, on évitera le dépassement du contenu hors de son contenant*/
+}
+aside > div img {
+  display: none;
+/*On gagnera de la place dans l'affichage du cv résolution réduite en n'affichant pas la photo*/
+} 
+
 }
