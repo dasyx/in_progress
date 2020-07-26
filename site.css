@@ -1,7 +1,6 @@
 /*Ia...AFFICHAGE GENERAL...:
 =============================================================*/
 body{
-  max-width: 90%;
   margin: 0 auto;
   padding: 0;
 }
@@ -9,7 +8,6 @@ body{
   display: flex;
   flex-direction: row-reverse;
   background-color: #fff;
-  padding: 1em;
 }
 /*Ib...PARAMETRES GÉNÉRAUX (titres + paragraphes)
 =============================================================*/
@@ -170,28 +168,43 @@ h3:first-child{
 
 /*IV...ADAPTABILITE RESPONSIVE DESIGN:
 =========================================================*/
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1920px) {
 
+.container p{
+  font-size: 2em;
+}
+h1{
+  font-size: 4vh;
+  margin-top: 90px;
+}
+h2{
+  font-size: 2vh;
+}
+article h3{
+  font-size: 2.5vh;
+}
+aside h3{
+  font-size: 3vh;
+}
 aside img{
   display: flex;
   align-items: center;
-  width: 180px;
-  height: 180px;
+  width: 220px;
+  height: 220px;
   margin: 0 auto;
   border-radius: 50%;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
+  margin-top: 50px;
 }
-
-p{
-  font-size: 1.2em;
-}
-  
 .aside_loisirs{
   flex: 1;
 } 
+.texte{
+  margin-right: 50px;
+}
 
 }
-@media screen and (min-width: 600px) and (max-width: 1024px) {
+@media screen and (min-width: 480px) and (max-width: 1024px) {
 
 body{
   width: 100%;
@@ -201,15 +214,18 @@ body{
   flex-direction: column;
   width: auto;
 }
-aside h3{
-  font-size: 3vh;
-}
 h1{
   font-size:3.2em;
   margin-top:70px;
 }
-p{
-  font-size: 1.1em;
+h2{
+  font-size: 2.7vh;
+}
+aside h3{
+  font-size: 3vh;
+}
+.container p{
+  font-size: 1.2em;
 }
 section{
   padding:20px;
@@ -246,5 +262,80 @@ aside > div img {
   display: none;
 /*On gagnera de la place dans l'affichage du cv résolution réduite en n'affichant pas la photo*/
 } 
+.date{
+  margin-right: 10px;
+}
+.texte{
+  margin-left: 20px;
+}
+
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+
+.container{
+  flex-direction: column;
+  width: 100%;
+}
+.droite{
+  display: block;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid lightgrey;
+  box-shadow: 5px 5px #777;
+}
+aside img{
+  display: none;
+}
+.recom{
+  display: block;
+}
+h1{
+  font-size: 2em;
+  margin-top: 70px;
+}
+h2{
+  font-size: 2.5vh;
+}
+aside h3{
+  font-size: 2vh;
+}
+article h3{
+  font-size: 3.5vh;
+}
+h4{
+  font-size: 2.5vh;
+}
+.container p{
+  font-size: 1em;
+}
+aside h3:first-child{
+  margin-top: 0px;
+}
+aside{
+  padding-top: 0px;
+}
+
+}
+
+@media screen and (max-width: 320px) {
+
+.container{
+  flex-direction: column;
+  font-size: small;
+  width: 100%;
+}
+.droite{
+  display: block;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid lightgrey;
+  box-shadow: 5px 5px #777;
+}
+aside img{
+  display: none;
+}
+.recom{
+  display: block;
+}
 
 }
