@@ -170,6 +170,9 @@ h3:first-child{
 =========================================================*/
 @media screen and (min-width: 1920px) {
 
+/*GRANDS ECRANS
+----------------*/
+
 .container p{
   font-size: 2em;
 }
@@ -205,6 +208,9 @@ aside img{
 
 }
 @media screen and (min-width: 480px) and (max-width: 1024px) {
+
+/*TABLETTES ET SMARTPHONES TAILLE MOYENNE
+--------------------------------------------*/
 
 body{
   width: 100%;
@@ -272,6 +278,9 @@ aside > div img {
 }
 @media screen and (max-width: 479px) {
 
+/*TELEPHONES BASSE RESOLUTION
+------------------------------*/
+
 .container{
   flex-direction: column;
   width: 100%;
@@ -305,6 +314,10 @@ article h3{
 h4{
   font-size: 2.5vh;
 }
+header hr{
+  display: flex;
+  margin: auto;
+}
 .container p{
   font-size: 1em;
 }
@@ -316,7 +329,6 @@ aside{
 }
 
 }
-
 @media screen and (max-width: 320px) {
 
 .container{
@@ -326,7 +338,7 @@ aside{
 }
 .droite{
   display: block;
-  padding: 15px;
+  padding: 0px 15px 10px 15px ;
   margin-bottom: 20px;
   border: 1px solid lightgrey;
   box-shadow: 5px 5px #777;
@@ -334,8 +346,27 @@ aside{
 aside img{
   display: none;
 }
+h1{
+  font-size: 2.4em;
+}
+h2{
+  font-size: 1.2em;
+}
+header hr{
+  display: flex;
+  margin: auto;
+}
+article h3{
+  font-size: 25px;
+}
 .recom{
   display: block;
+}
+.left{
+  padding-top: 10px;
+}
+.right{
+  padding-top: 20px;
 }
 
 }
