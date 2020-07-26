@@ -1,5 +1,6 @@
 /*Ia...AFFICHAGE GENERAL...:
 =============================================================*/
+
 body{
   margin: 0 auto;
   padding: 0;
@@ -52,7 +53,7 @@ h4{
 aside{
   display: flex;
   flex-direction: column;
-  flex: 3;
+  flex: 2;
   background-color: rgb(102,187,106);
   text-align: justify;
   padding-top: 50px;
@@ -206,10 +207,6 @@ aside img{
 /*TABLETTES ET SMARTPHONES TAILLE MOYENNE
 --------------------------------------------*/
 
-body{
-  width: 100%;
-}
-
 .container{
   flex-direction: column;
   width: auto;
@@ -270,14 +267,13 @@ aside > div img {
 }
 
 }
-@media screen and (max-width: 479px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
 
 /*TELEPHONES BASSE RESOLUTION
 ------------------------------*/
 
 .container{
   flex-direction: column;
-  width: 100%;
 }
 .droite{
   display: block;
@@ -323,12 +319,10 @@ aside{
 }
 
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 319px) {
 
 .container{
   flex-direction: column;
-  font-size: small;
-  width: 100%;
 }
 .droite{
   display: block;
@@ -340,18 +334,24 @@ aside{
 aside img{
   display: none;
 }
+header hr{
+  display: flex;
+  margin: auto;
+}
 h1{
   font-size: 2.4em;
 }
 h2{
   font-size: 1.2em;
 }
-header hr{
-  display: flex;
-  margin: auto;
-}
 article h3{
   font-size: 25px;
+}
+h4{
+  font-size: 1.3em;
+}
+.container p{
+  font-size: 0.9em;
 }
 .recom{
   display: block;
