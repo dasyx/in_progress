@@ -89,6 +89,7 @@ aside div:nth-child(2){
   padding: 25px;
 }
 address{
+  padding-bottom: 15px;
   font-style: normal;
 }
 address a{
@@ -236,10 +237,10 @@ header{
   padding-bottom: 60px;
 }
 header img{
-  padding-top: 10px;
-  width: 160px;
-  height: 160px;
-  border-radius: 140px;
+  padding-top: 40px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
   display: flex;
   margin: auto;
 }
