@@ -235,9 +235,15 @@ header{
   margin: 0 auto;
   text-align: center;
   padding-bottom: 60px;
-}
-header img{
   padding-top: 40px;
+}
+/*header::before{
+  display: block;
+  content: "";
+  clear: both;
+  padding-bottom: 50px;
+}*/
+header img{
   width: 180px;
   height: 180px;
   border-radius: 50%;
