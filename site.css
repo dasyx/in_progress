@@ -331,16 +331,23 @@ h3:first-child {
         margin-top: 70px;
     }
     h2 {
-        font-size: 2.5vh;
+        font-size: 1.5vh;
     }
     aside h3 {
         font-size: 2vh;
     }
     article h3 {
-        font-size: 3.5vh;
+        font-size: 2vh;
     }
     h4 {
-        font-size: 2.5vh;
+        font-size: 1.5vh;
+    }
+    header img {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        display: flex;
+        margin: auto;
     }
     header hr {
         display: flex;
