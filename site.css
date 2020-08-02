@@ -20,7 +20,6 @@ h1 {
     font-weight: 200;
     font-size: 50px;
     word-spacing: 2px;
-    letter-spacing: 1px;
     font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -320,6 +319,9 @@ h3:first-child {
         border: 1px solid lightgrey;
         box-shadow: 5px 5px #777;
     }
+    .left {
+        margin: 40px 0px 40px 0px;
+    }
     aside img {
         display: none;
     }
@@ -334,7 +336,7 @@ h3:first-child {
         font-size: 1.5vh;
     }
     aside h3 {
-        font-size: 2vh;
+        font-size: 2.2vh;
     }
     article h3 {
         font-size: 2vh;
